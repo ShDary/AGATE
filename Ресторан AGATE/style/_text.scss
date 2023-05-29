@@ -1,0 +1,21 @@
+.text {
+        max-width: 941px;
+        font-size: $text-font;
+        line-height: 41px;
+        color: $primary-color;
+        margin: 0 auto;
+}
+
+@media  screen and (max-width: 1024px) {
+        .text {
+                font-size: 1.1rem;
+                line-height: 30px;
+        }
+}
+
+@media screen and (max-width: 768px) {
+        .text {
+                font-size: 1rem;
+                line-height: 27px;
+        }
+}

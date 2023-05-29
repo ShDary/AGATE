@@ -1,0 +1,19 @@
+.background {
+    background-image: url(../image/background.png);
+    background-repeat: no-repeat;
+    background-color: rgba(0, 0, 0, 0.48);
+    background-size: cover;
+    background-position: center;
+}
+
+@media screen and (max-width: 1024px) {
+    .background {
+        padding-bottom: 153px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .background {
+        padding-bottom: 99px;
+    }
+}

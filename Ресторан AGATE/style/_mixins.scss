@@ -1,0 +1,33 @@
+@mixin button {
+    display: block;
+    max-width: 312px;
+    line-height: 25px;
+    height: 60px;
+    font-weight: 600;
+    margin: 0 auto;
+    text-decoration: none;
+    border-radius: 30px;
+    padding: 17px 0 18px;
+}
+
+@mixin discription-font {
+    font-size: $description-font;
+    line-height: 23px;
+}
+
+@mixin small-text($color) {
+    font-size: $small-font;
+    line-height: 31px;
+    color: $color;
+    
+}
+
+@mixin menu-after($secondary-color) {
+    display: inline-block;
+    width: 16px;
+    height: 1px;
+    margin: 0 25px;
+    vertical-align: middle;
+    transform: rotate(90deg);
+    background-color: $secondary-color;
+}

@@ -1,0 +1,42 @@
+.cook {
+    background: $primary-background;
+    padding: 100px 0;
+
+    &__text {
+        @include small-text(#474747);
+        margin-bottom: 30px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .cook {
+        padding: 80px 0;
+
+        .cook__paragraph {
+            max-width:691px;
+        }
+
+        .cook__text {
+            font-size: 1.1rem;
+            line-height: 28px;
+
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .cook {
+        padding: 70px 0;
+
+        .cook__paragraph {
+            max-width:626px;
+        }
+
+        .cook__text {
+            font-size: 1rem;
+            line-height: 25px;
+            margin-bottom: 20px;
+        }
+    }
+    
+}

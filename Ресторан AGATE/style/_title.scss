@@ -1,0 +1,22 @@
+.title {
+    font-weight: 600;
+    font-size: $heading-font;
+    line-height: 50px;
+    color: $primary-color;
+    margin-bottom: 30px;
+}
+
+@media screen and (max-width: 1024px) {
+    .title {
+        font-size: 1.75rem;
+        line-height: 44px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .title {
+        font-size: 1.5rem;
+        line-height: 38px;
+        margin-bottom: 20px;
+    }
+}

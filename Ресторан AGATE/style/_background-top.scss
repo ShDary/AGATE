@@ -1,0 +1,38 @@
+.background-top {
+    padding: 44px 359px 45px 371px;
+    display: flex;
+    justify-content: space-between;
+}
+
+@media screen and (max-width: 1650px) {
+    .background-top {
+        padding-right: 300px;
+        padding-left: 300px;
+    }
+}
+
+
+@media screen and (max-width: 1550px) {
+    .background-top {
+        padding-right: 250px;
+        padding-left: 250px;
+    }
+}
+
+@media screen and (max-width: 1440px) {
+    .background-top {
+        padding: 13px 31px 13px 42px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .background-top {
+        padding: 8px 13px 8px 24px;
+    }
+}
+
+@media screen and (max-width: 530px) {
+    .background-top {
+        flex-direction: column;
+    }
+}

@@ -1,0 +1,31 @@
+.dishes {
+    padding: 100px 0 100px;
+}
+.dishes__text {
+    @include small-text(#474747);
+    margin-bottom: 60px;
+    
+}
+
+@media screen and (max-width: 1024px) {
+    .dishes {
+        padding: 80px 0 80px;
+    
+        &__text {
+            font-size: 1.1rem;
+            line-height: 28px;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .dishes {
+        padding: 70px 0 70px;
+        &__text {
+            font-size: 1rem;
+            line-height: 25px;
+        }
+    }
+}
+
+

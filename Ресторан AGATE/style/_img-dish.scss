@@ -1,0 +1,12 @@
+.img-dish {
+    padding-bottom: 35px;
+    width:100%;
+    height:100%;
+    object-fit: cover;
+}
+
+@media screen and (max-width: 768px) {
+    .img-dish {
+        max-width: 320px;
+    }
+}

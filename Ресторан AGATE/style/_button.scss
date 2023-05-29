@@ -1,0 +1,24 @@
+.button{
+    @include button;
+}
+
+.button:hover {
+    background-color: #FFA60D;
+    border-color: #FFA60D;
+}
+
+
+.button--white  {
+    border: 2px solid #fff;
+    color: $secondary-color;
+}
+
+
+.button--black {
+    border: 2px solid #000;
+    color: $primary-color;
+}
+
+.button--black:hover{
+    color: $secondary-color;
+}

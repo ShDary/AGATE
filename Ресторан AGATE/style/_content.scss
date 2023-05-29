@@ -1,0 +1,32 @@
+.content {
+    text-align: left;
+    
+}
+
+.content__title {
+    font-weight: 400;
+    font-size: $text-font;
+    line-height: 38px;
+    color: $primary-color;
+    margin-bottom: 15px;
+}
+
+.content__description {
+    @include discription-font;
+    color: #474747;
+    margin-bottom: 15px;
+}
+
+.content__price {
+    font-weight: 700;
+    @include discription-font;
+    color: $primary-color;
+    
+}
+
+@media screen and (max-width: 768px) {
+    .content {
+    max-width: 348px;
+    }
+}
+

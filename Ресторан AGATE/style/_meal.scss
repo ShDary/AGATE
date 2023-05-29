@@ -1,0 +1,122 @@
+.meal {
+    position: relative;
+    width: calc((100% - 2*48px)/3);
+    max-width: 360px;
+}
+
+.meal:not(:last-of-type) {
+    margin-right: 48px; 
+}
+
+.meal::before {
+    display: block;
+    position: absolute;
+    width: 58px;
+    height: 58px;
+    border-radius: 50%;
+    font-weight: 600;
+    font-size: .6rem;
+    line-height: 18px;
+    line-height: 58px;
+    top: -20px;
+    left: -5%;
+}
+
+.meal--red:first-of-type::before {
+    content: "HOT!";
+    background-color: #D33B3B;
+    }
+
+.meal--green:nth-of-type(2)::before {
+    content: "NEW!";
+    background-color: #B3E151;
+    }
+
+.meal--orange:nth-of-type(3)::before {
+    content: "HIT!";
+    background-color:#E5A434;
+    }
+
+@media screen and (max-width: 1250px) {
+    .meal {
+        max-width: 310px;
+        width: calc((100% - 2*30px)/3);
+        &:not(:last-of-type) {
+            margin-right: 30px;
+        }
+    }
+}
+
+@media screen and (max-width: 1035px) {
+    .meal {
+        max-width: 300px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .meal {
+        max-width: 252px;
+        width: calc((100% - 2*92px)/3);
+        &:not(:last-of-type) {
+            margin-right: 92px;
+        }
+        &::before {
+            width: 46px;
+            height: 46px;
+            font-size: .6rem;
+            line-height: 15px;
+            line-height: 46px;
+        }
+    }
+}
+
+@media screen and (max-width: 972px) {
+    .meal {
+        max-width: 220px;
+        width: calc((100% - 2*40px)/3);
+        &:not(:last-of-type) {
+            margin-right: 40px;
+        }
+
+    }
+}
+
+@media screen and (max-width: 875px) {
+    .meal {
+        max-width: 200px;
+        width: calc((100% - 2*32px)/3);
+        &:not(:last-of-type) {
+            margin-right: 32px;
+        }
+    }
+}
+
+
+@media  screen and (max-width: 768px) {
+    .meal {
+        max-width: 692px;
+        width: 100%;
+        display: flex;
+        &:not(:last-of-type) {
+            margin-right: 0;
+            margin-bottom: 58px;
+        }
+        &::before {
+            width: 56px;
+            height: 56px;
+            font-size: .7rem;
+            line-height: 18px;
+            line-height: 56px;
+            left: -3%;
+        }
+    }
+}
+
+@media screen  and (max-width:730px) {
+    .meal {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        max-width: 300px;
+    }
+}
